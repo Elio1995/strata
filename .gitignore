@@ -1,0 +1,17 @@
+node_modules
+dist
+umd
+coverage
+.DS_Store
+*.log
+.vscode
+.idea
+.env
+.env.local
+.tsbuildinfo
+*.tsbuildinfo
+.rollup.cache
+.husky/_
+demo/app.js
+demo/app.js.map
+INIT_REPO.sh
