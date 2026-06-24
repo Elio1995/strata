@@ -15,6 +15,7 @@ defensive transport, end-to-end types, real tests, and CI-ready.
 
 ## Table of contents
 
+- [Demo](#demo)
 - [What it does](#what-it-does)
 - [How it works](#how-it-works)
 - [Tech stack and why](#tech-stack-and-why)
@@ -40,8 +41,19 @@ defensive transport, end-to-end types, real tests, and CI-ready.
 - [Project structure](#project-structure)
 - [Troubleshooting](#troubleshooting)
 - [What's out of scope](#whats-out-of-scope)
-- [Demo](#demo)
 - [License](#license)
+
+---
+
+## Demo
+
+The SDK powers a small HTML page in `demo/` that geocodes a city, fetches the
+7-day forecast, and renders it. Run `pnpm build && pnpm dlx http-server` from
+the repo root and open the printed URL at `/demo/`.
+
+![Strata weather demo with a 7-day forecast for Toronto](screenshots/01-demo.png)
+
+See [`demo/README.md`](./demo/README.md) for details.
 
 ---
 
@@ -596,15 +608,6 @@ stays focused:
 - **Custom backoff strategies (Fibonacci, decorrelated jitter).** The current
   default is sensible; the `backoff` option exposes the knobs.
 - **Server-Sent Events.** Not supported upstream.
-
----
-
-## Demo
-
-There's a single-page weather demo under [`demo/`](./demo/). After
-`pnpm build`, run any static server (e.g. `npx serve demo`) and open it in
-the browser. Type a city, watch the SDK geocode it, fetch a 7-day forecast,
-and render the strip. See [`demo/README.md`](./demo/README.md) for details.
 
 ---
 
